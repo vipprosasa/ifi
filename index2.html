@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />s
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="main.css" />
+		<!-- CSS only -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"> -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+		<script
+			src="https://code.jquery.com/jquery-2.2.0.min.js"
+			type="text/javascript"
+		></script>
+		<script src="./main.js" defer></script>
+		<script
+			src="./slick/slick.js"
+			type="text/javascript"
+			charset="utf-8"
+		></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="toggle-right-side">
+			<span class="fa fa-angle-double-right"></span>
+		</div>
+		<div class="right-side">
+			<div class="right-side-bar">
+				<div class="right-side-btn">
+					<a href="">
+						<span>
+							<span class="fa fa-arrow-left"></span>
+						</span>
+
+						<span> Back </span>
+					</a>
+					<a href="">
+						<span>
+							<span class="fa fa-download"></span>
+						</span>
+
+						<span> Download </span>
+					</a>
+					<a href="">
+						<span>
+							<span class="fa fa-shopping-cart"></span>
+						</span>
+
+						<span> Back </span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header fixed">
+			<div class="header-title">
+				<a href="">Today's special Offers</a>
+			</div>
+			<div class="header-search">
+				<form action="#" method="POST">
+					<input
+						type="text"
+						name="Product"
+						value="Search a product..."
+					/>
+					<input type="submit" value="" />
+				</form>
+			</div>
+			<div class="header-cart">
+				<button class="dropcart">View Your Cart</button>
+				<div id="cartdrop-down" class="cart-dropdown">
+					<button class="delete">X</button>
+				</div>
+			</div>
+			<!-- <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div> -->
+
+			<div class="header-info">
+				<ul>
+					<li class="dropdown header-dropdown">
+						<a href="">
+							<i class="fa fa-user"></i>
+							<span class="caret"></span>
+						</a>
+						<div class="header-dropdown-menu">
+							<ul class="dropdown-menu">
+								<li>
+									<a href="">Login</a>
+								</li>
+								<li>
+									<a href="">Sign Up</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="header-contact">
+				<h2>
+					<a href="">Contact Us</a>
+				</h2>
+			</div>
+		</div>
+		<div class="nav-header">
+			<div
+				class="nav-header-container"
+				style="height: 80px; width: 1296px; margin: auto"
+			>
+				<div class="nav-logo">
+					<h1>
+						<a href="">
+							<span>Grocery</span>
+							Store
+						</a>
+					</h1>
+				</div>
+				<div class="nav-middle">
+					<ul>
+						<li>
+							<a href="">Events</a>
+							<i>/</i>
+						</li>
+						<li>
+							<a href="">About Us</a>
+							<i>/</i>
+						</li>
+						<li>
+							<a href="">Best Deals</a>
+							<i>/</i>
+						</li>
+						<li>
+							<a href="">Services</a>
+							<i>/</i>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-number">
+					<ul>
+						<li>
+							<i class="fa fa-phone"></i>
+							(+0123) 234 567
+						</li>
+						<li>
+							<i class="fa fa-envelope-o"></i>
+							<a href="">store@grocery.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="banner-header">
+			<div class="container" style="display: flex">
+				<div class="banner-header1">
+					<i class="fa fa-home"></i>
+					<a href="">Home</a>
+					<span>|</span>
+				</div>
+				<div class="banner-header2">
+					<span>Fruits & Vegetables</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="nav-slider row">
+				<div class="nav-banner col-md-3 col-sm-12">
+					<div class="navbar-new">
+						<div class="navbar-nav">
+							<ul class="nav navbar-nav">
+								<li><a href="">Branded Foods</a></li>
+								<li><a href="">Households</a></li>
+								<li class="dropdownnew">
+									<a href="">Veggies & Fruits</a>
+									<div class="dropdown1">
+										<ul>
+											<li><a href="">Vegetables</a></li>
+											<li><a href="">Fruits</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="">Kitchen</a></li>
+								<li><a href="">Short Codes</a></li>
+								<li class="dropdown">
+									<a href="">Beverages</a>
+								</li>
+								<li><a href="">Pet Food</a></li>
+								<li class="dropdown">
+									<a href="">Frozen Foods</a>
+								</li>
+								<li><a href="">Bread & Bakery</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-9">
+					<div class="imgright">
+						<div class="imgtop">
+							<h3>Best Deals For New Products</h3>
+							<span class="blink"></span>
+						</div>
+					</div>
+					<div class="imgbottom">
+						<div class="col-md-4 bottom1">
+							<img
+								src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/18.jpg"
+								alt=""
+							/>
+							<h4>Fruits & Vegetables</h4>
+							<ol>
+								<li>sunt in culpa qui officia</li>
+								<li>commodo consequat</li>
+								<li>sed do eiusmod tempor incididunt</li>
+							</ol>
+						</div>
+						<div class="col-md-4 bottom1">
+							<img
+								src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/19.jpg"
+								alt=""
+							/>
+							<h4>Dry Fruits</h4>
+							<ol>
+								<li>enim ipsam voluptatem officia</li>
+								<li>tempora incidunt ut labore et</li>
+								<li>vel eum iure reprehenderit</li>
+							</ol>
+						</div>
+						<div class="col-md-4 bottom1">
+							<img
+								src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/20.jpg"
+								alt=""
+							/>
+							<h4>Vegetables</h4>
+							<ol>
+								<li>dolorem eum fugiat voluptas</li>
+								<li>ut aliquid ex ea commodi</li>
+								<li>magnam aliquam quaerat</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fruit-product">
+			<div class="col-md-10">
+				<div class="product-content">
+					<h3>Fruits & Vegetables</h3>
+					<!-- <div class="product-list">
+                        <h6>Fruits & Vegetables</h6>
+                        <div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/29.png"
+												alt=""
+										/></a>
+										<p>Fresh Bananas (1 kg)</p>
+										<h4>
+											$10.00
+											<span>$12.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/29.png"
+												alt=""
+										/></a>
+										<p>Fresh Bananas (1 kg)</p>
+										<h4>
+											$10.00
+											<span>$12.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/29.png"
+												alt=""
+										/></a>
+										<p>Fresh Bananas (1 kg)</p>
+										<h4>
+											$10.00
+											<span>$12.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/29.png"
+												alt=""
+										/></a>
+										<p>Fresh Bananas (1 kg)</p>
+										<h4>
+											$10.00
+											<span>$12.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- <div class="product-list">
+                        <h6>food</h6>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/29.png"
+												alt=""
+										/></a>
+										<p>Fresh Bananas (1 kg)</p>
+										<h4>
+											$10.00
+											<span>$12.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/30.png"
+												alt=""
+										/></a>
+										<p>Fresh Cauliflower (2 No's)</p>
+										<h4>
+											$5.00
+											<span>$8.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/31.png"
+												alt=""
+										/></a>
+										<p>Fresh brinjal bharta (1 kg)</p>
+										<h4>
+											$2.00
+											<span>$3.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/32.png"
+												alt=""
+										/></a>
+										<p>Fresh sweet lime (500 Gm)</p>
+										<h4>
+											$6.00
+											<span>$7.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- <div class="product-list">
+                        <h6>Beverages</h6>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/29.png"
+												alt=""
+										/></a>
+										<p>Fresh Bananas (1 kg)</p>
+										<h4>
+											$10.00
+											<span>$12.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/30.png"
+												alt=""
+										/></a>
+										<p>Fresh Cauliflower (2 No's)</p>
+										<h4>
+											$5.00
+											<span>$8.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/31.png"
+												alt=""
+										/></a>
+										<p>Fresh brinjal bharta (1 kg)</p>
+										<h4>
+											$2.00
+											<span>$3.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-list-item">
+								<div class="tag">
+									<img
+										src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+										alt=""
+									/>
+								</div>
+								<div class="product-list-item1">
+									<div class="list-item1-top">
+										<a href=""
+											><img
+												src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/32.png"
+												alt=""
+										/></a>
+										<p>Fresh sweet lime (500 Gm)</p>
+										<h4>
+											$6.00
+											<span>$7.00</span>
+										</h4>
+									</div>
+									<div class="hot-offer-button">
+										<button class="add-cart">
+											Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="newsletter">
+			<div class="container">
+				<div class="newsletter-text">
+					<h3>Sign up for our newsletter</h3>
+				</div>
+				<div class="newsletter-box">
+					<form action="">
+						<input type="email" value="Email" />
+						<input type="submit" value="subscribe now" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer-top">
+					<div class="col-md-3">
+						<h3>information</h3>
+						<ul>
+							<li class="footer-icon"><a href="">Events</a></li>
+							<li class="footer-icon"><a href="">About Us</a></li>
+							<li class="footer-icon">
+								<a href="">Best Deals</a>
+							</li>
+							<li class="footer-icon"><a href="">Services</a></li>
+							<li class="footer-icon">
+								<a href="">Short Codes</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>policy info</h3>
+						<ul>
+							<li class="footer-icon"><a href="">FAQ</a></li>
+							<li class="footer-icon">
+								<a href="">Privacy Policy</a>
+							</li>
+							<li class="footer-icon">
+								<a href="">Term Of Use</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>what in stores</h3>
+						<ul>
+							<li class="footer-icon"><a href="">Pet Food</a></li>
+							<li class="footer-icon">
+								<a href="">Frozen Snacks</a>
+							</li>
+							<li class="footer-icon"><a href="">Kitchen</a></li>
+							<li class="footer-icon">
+								<a href="">Branded Foods</a>
+							</li>
+							<li class="footer-icon">
+								<a href="">Households</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>Twitter Posts</h3>
+						<ul>
+							<li class="footer-content">
+								<i class="fa fa-twitter"></i>
+								<span>01 day ago</span>
+								<p>
+									Non numquam
+									<a href="">http://sd.ds/13jklf#</a>
+
+									eius modi tempora incidunt ut labore et
+									<a href="">http://sd.ds/1389kjklf#</a>
+									quo nulla.
+								</p>
+							</li>
+							<li class="footer-content">
+								<i class="fa fa-twitter"></i>
+								<span>02 day ago</span>
+								<p>
+									Non numquam
+									<a href="">http://sd.ds/13jklf#</a>
+
+									eius modi tempora incidunt ut labore et
+									<a href="">http://sd.ds/1389kjklf#</a>
+									quo nulla.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-2">
+					<div class="col-md-3">
+						<h4 style="margin-bottom: 15px">
+							100% Secure Payments
+						</h4>
+						<img
+							src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/card.png"
+							alt=""
+						/>
+					</div>
+					<div class="col-md-3">
+						<h5 style="margin-bottom: 15px">Connect With Us</h5>
+						<ul>
+							<li>
+								<a href="">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-dribbble"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-3">
+					<p>
+						© 2016 Grocery Store. All rights reserved | Design by
+						<a href="">W3layouts</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,1425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.toggle-right-side {
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    width: 90px;
+    z-index: 99999;
+    text-align: center;
+    float: right !important;
+}
+
+.toggle-right-side span {
+    background: #0d1326;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #e6ebff;
+    border-radius: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.right-side {
+    width: 90px;
+    position: fixed;
+    height: 100%;
+    z-index: 1000;
+    right: 0px;
+    top: 0;
+    margin-top: 60px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: auto;
+}
+
+.right-side-bar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 40px 5px;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    background: #0d1326;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.right-side-btn {
+    border-top: 1px solid #41414d;
+    padding-top: 30px;
+}
+
+.right-side-btn span {
+    display: block;
+}
+
+.right-side-btn a {
+    display: block;
+    color: #e6ebff;
+    text-decoration: none;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    z-index: 9999;
+}
+
+.header {
+    background: #212121;
+}
+
+.header-title {
+    float: left;
+}
+
+.header-title a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 3em;
+    background: #84c639;
+    display: block;
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+}
+
+.header-search {
+    float: left;
+    width: 27%;
+    margin: 0.1em 0 0em 10em;
+}
+
+.header-search input[type="text"] {
+    outline: none;
+    padding: 10px;
+    color: #212121;
+    font-size: 14px;
+    width: 85%;
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+}
+
+.header-search input[type="submit"] {
+    outline: none;
+    padding: 10px 0 9px;
+    width: 15%;
+    border: 1px solid;
+    position: relative;
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/img-sp.png)
+        no-repeat 14px 5px #fa1818;
+}
+
+.header-cart {
+    float: left;
+    margin-left: 7em;
+    position: relative;
+}
+
+.header-cart button {
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    text-transform: capitalize;
+    padding: 0.5em 2.5em 0.5em 1em;
+    border: 1px solid #84c639;
+    margin: 0.35em 0 0;
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/cart.png)
+        no-repeat 116px 9px;
+}
+
+.header-info {
+    float: left;
+    padding-left: 10em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header-info ul li {
+    list-style-type: none;
+}
+
+.header-info a {
+    display: block;
+    padding-top: 1em;
+    font-size: 1em;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.header-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header-dropdown:hover .header-dropdown-menu ul {
+    display: block;
+}
+
+.header-dropdown ul {
+    right: 0;
+    min-width: 130px;
+    text-align: center;
+    padding: 1.5em 0;
+    margin: 0;
+    left: auto;
+    position: absolute;
+}
+
+.header-dropdown-menu {
+    position: absolute;
+}
+
+.header-dropdown-menu ul li:first-child {
+    margin-bottom: 0.5em;
+}
+
+.header-dropdown-menu ul li a {
+    color: #999;
+    display: block;
+    text-decoration: none;
+}
+
+.header-contact {
+    float: right;
+}
+
+.header-contact h2 {
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+}
+
+.header-contact h2 a {
+    font-size: 0.74em;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    background: #fa1818;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-header {
+    padding: 4em 0 1em;
+}
+
+.nav-logo {
+    float: left;
+    margin-right: 7em;
+}
+
+.nav-logo a {
+    font-size: 1.5em;
+    color: #212121;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/img-sp.png)
+        no-repeat 54px 6px;
+    line-height: 1;
+    height: 97px;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.nav-logo a span {
+    font-size: 0.3em;
+    display: block;
+    color: #fa1818;
+}
+
+.nav-middle {
+    float: left;
+    margin-top: 2.3em;
+}
+
+.nav-middle ul li {
+    display: inline-block;
+}
+
+.nav-middle li a {
+    color: #212121;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-middle li a:hover {
+    color: #fa1818;
+}
+.nav-middle li i {
+    padding: 0 2em;
+}
+
+.nav-number {
+    margin-left: 4em;
+    float: left;
+    margin-top: 2.3em;
+}
+
+.nav-number li {
+    display: inline-block;
+    color: #212121;
+    font-family: "Ubuntu", sans-serif;
+    margin-right: 2em;
+}
+
+.nav-number li i {
+    padding-right: 1em;
+}
+
+.nav-number li a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.nav-number li a:hover {
+    color: #fa1818;
+}
+
+/* .nav-banner{
+    float: left;
+    width: 20%;
+    background: #f5f5f5;
+    position: absolute;
+} */
+
+.navbar-new {
+    margin-bottom: 0;
+    border: none;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0;
+    border-top: 1px solid #b58f62;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.navbar-nav li a {
+    color: #212121;
+    padding: 10px 200px 10px 40px;
+    border-bottom: 1px dotted #cdcdcd;
+    display: block;
+    font-family: "Ubuntu", sans-serif !important;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+    background-color: #84c639;
+    color: #fff;
+}
+
+.slide1 {
+    background-color: red;
+}
+
+.banner-bot {
+    padding: 5em 0 !important;
+}
+
+.banner-right {
+    float: left;
+    width: 20%;
+}
+
+.banner-left {
+    width: 80%;
+    padding: 4em 0;
+    display: flex;
+}
+
+.banner-img {
+    padding-left: 0;
+}
+
+.banner-img-inside {
+    position: relative;
+}
+
+/* Đoạn config */
+
+.nav-slider {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.dropdownnew {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown1 {
+    position: absolute;
+    left: 13%;
+    border: none;
+    padding: 1em;
+    display: none;
+    background-color: white;
+}
+
+.dropdownnew:hover .dropdown1 {
+    display: block;
+}
+
+.dropdown1 ul li:first-child {
+    margin-bottom: 0.5em;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.dropdown1 ul li a {
+    color: #212121;
+    display: block;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+}
+.carousel-item {
+    width: 100% !important;
+    height: 500px;
+}
+
+.slide1-content {
+    min-height: 500px;
+    text-align: right;
+    padding: 10em 17em 0 0;
+    margin-bottom: 5em;
+}
+
+.slider1 {
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/1.jpg);
+    background-size: cover;
+}
+
+.slider2 {
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/2.jpg);
+}
+
+.slider3 {
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/3.jpg);
+}
+
+.banner-header {
+    padding: 1em 0;
+    background: #84c639;
+}
+
+.banner-header1 {
+    display: inline-block;
+    color: #212121;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.banner-header1 i {
+    padding-right: 1em;
+    color: #fa1818;
+}
+
+.banner-header1 a {
+    color: #fff;
+    text-decoration: none;
+}
+.banner-header1 a:hover {
+    color: #fa1818;
+}
+.banner-header1 span {
+    padding: 0 2em;
+}
+
+.banner-header2 span {
+    display: inline-block;
+    color: #212121;
+    font-family: "Ubuntu", sans-serif !important;
+}
+.slide1-content h3 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.slide1-content span {
+    display: block;
+    font-weight: 600;
+    line-height: 2em;
+}
+.slide1-button {
+    width: 20%;
+    text-align: center;
+    margin-left: 42em;
+}
+
+.footer-3 a:hover {
+    color: red;
+    transition: 0.5s ease-in;
+}
+
+.footer-2 li a:hover {
+    background: blue;
+    border-color: blue;
+    transition: 0.5s ease-in;
+}
+.slide1-button button {
+    padding: 10px 80px;
+    background: #84c639;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: block;
+    border: none;
+    outline: none !important;
+}
+
+.slide1-button:hover button {
+    color: red;
+}
+
+.slide1-content p {
+    display: block;
+    font-weight: 600;
+    line-height: 2em;
+    color: #fa1818;
+    font-style: italic;
+}
+
+.dots {
+    width: 15px !important;
+    height: 14px !important;
+    color: #84c639;
+    background-color: none !important;
+    border-radius: 20px !important;
+    border: 2px solid #84c639;
+}
+
+.carousel-indicators .active {
+    background-color: #84c639 !important;
+}
+
+.carousel-indicators {
+    bottom: -55px !important;
+}
+
+.header-dropdown::before {
+    content: "";
+
+    width: 40px;
+    height: 50px;
+    position: absolute;
+}
+
+.nav-slider .nav-banner {
+    float: left;
+    
+    display: block;
+    /* height: 370px; */
+}
+
+.banner-img {
+    padding-left: 0;
+}
+
+.banner-img-content1 {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.banner-img-content1 h4 {
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.banner-img-content1 h4 span {
+    display: block;
+    line-height: 1;
+    width: 80px;
+    height: 80px;
+    background: #fa1818;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 1.2em;
+    margin: 0.5em auto 0;
+}
+
+.banner-img-content2 {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    padding: 0 2em;
+}
+
+.banner-img-content2 h3 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    color: #212121;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+}
+
+.banner-img-content2 h3 span {
+    color: #84c639;
+    font-weight: 600;
+    display: block;
+    line-height: 1.8em;
+    padding-left: 7em;
+}
+
+.banner-img-text {
+    color: #fa1818;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.banner-img-content3 {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+}
+
+.banner-img-content3 h3 {
+    text-transform: uppercase;
+    color: #212121;
+    font-size: 2em;
+}
+
+.banner-img-content3 h3 span {
+    display: block;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fa1818;
+}
+
+.hot-offer {
+    background: #f5f5f5;
+    padding: 5em 0 !important;
+}
+
+.hot-offer h3 {
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+    text-align: center;
+    color: #212121;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-size: 2.5em;
+}
+
+.hot-offer h3::after {
+    content: "";
+    background: #fa1818;
+    height: 3px;
+    width: 8%;
+    position: absolute;
+    bottom: 0%;
+    left: 46%;
+}
+
+.hot-offer-item {
+    margin: 3em 0 0;
+    display: flex;
+}
+
+.hot-item {
+    position: relative;
+    margin: 0;
+    background: #ffffff;
+    padding: 0.5em;
+    border: 1px solid #bebebe;
+    margin-right: 20px;
+}
+
+.hot-offer-tag {
+    position: absolute;
+    top: -1%;
+    right: 10%;
+}
+
+.hot-offer-img {
+    padding: 1em;
+    border: 1px solid #d7d7d7;
+}
+
+.hot-offer-top a {
+    display: block;
+    text-align: center;
+}
+
+.hot-offer-top img {
+    margin: 0 auto;
+}
+
+.hot-offer-top p {
+    color: #212121;
+    margin: 1.5em 0 1em;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.hot-offer-top h4 {
+    font-weight: 600;
+    font-size: 1em;
+    color: #212121;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.hot-offer-top h4 span {
+    font-weight: 300;
+    text-decoration: line-through;
+    padding-left: 1em;
+    font-size: 1em;
+    color: #212121;
+}
+
+.hot-offer-button {
+    text-align: center;
+    margin: 1.5em auto 1em;
+    width: 77%;
+}
+
+.hot-offer-button p {
+    font-size: 14px;
+    color: #fff;
+    background: #fa1818;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0.5em 0;
+    outline: none;
+}
+
+.hot-offer-button button {
+    border: none;
+    outline: 0;
+
+    color: white;
+    background-color: #fa1818;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.hot-offer-button p:hover {
+    color: greenyellow;
+    opacity: 0.7;
+}
+
+.hot-offer-top p {
+    color: #212121;
+    margin: 1.5em 0 1em;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.tag2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.top-product {
+    padding: 5em 0 !important;
+}
+
+.top-product h3 {
+    text-align: center;
+    color: #212121;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-size: 2.5em;
+    font-family: "Ubuntu", sans-serif !important;
+    font-weight: 500;
+}
+
+.top-product h3::after {
+    content: "";
+    background: #fa1818;
+    height: 2px;
+    width: 8%;
+    position: absolute;
+    bottom: 0%;
+    left: 46%;
+}
+
+.top-product-item {
+    margin: 3em 0 0;
+    padding: 1em 0em 1em 1em;
+    background: #f5f5f5;
+}
+
+.top-product-left {
+    padding: 0;
+}
+
+.product-left {
+    padding: 1em;
+    background: #fff;
+}
+
+.product-left li {
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    color: #84c639;
+}
+
+.product-left i {
+    padding-right: 1em;
+}
+
+.product-left a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #212121;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.product-left a:hover {
+    color: #84c639;
+    transition: 0.5s ease-in;
+}
+
+.top-product-right {
+    padding: 0;
+    display: flex;
+}
+
+.product-right1 {
+    height: 100%;
+}
+.product-right1 img {
+    max-width: 100%;
+    height: 80%;
+}
+
+.product-right2 {
+    position: relative;
+}
+
+.product-right2 .img-responsive {
+    max-width: 100%;
+}
+
+.product-right2-button {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    margin-left: 0 !important;
+}
+
+.product-right2-button a {
+    padding: 10px 30px;
+    background: #84c639;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: block;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.product-right2-button button {
+    background: #84c639;
+    border: none;
+    color: white;
+    font-family: "Ubuntu", sans-serif !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.product-right2-button a:hover {
+    background-color: #fa1818;
+    color: #656060;
+    transition-timing-function: ease-out;
+}
+
+.product-right2-button button:hover {
+    background-color: #fa1818;
+    color: #656060;
+    transition-timing-function: ease-out;
+}
+
+.product-right2-bottom {
+    margin: 1em 0 0;
+    position: relative;
+}
+
+.product-right2-bottom img {
+    max-width: 100%;
+}
+
+.right2-bottom-tag {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.right2-bottom-tag h5 {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 600;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: #fa1818;
+    border-radius: 50%;
+    padding: 1.1em 0 0;
+    line-height: 1.3em;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.product-right3 img {
+    max-width: 100%;
+}
+
+.top-product-text {
+    margin: 1em 0 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.top-product-text-inside {
+    width: 100%;
+    float: left;
+    padding: 0.8em 0 0px;
+    text-align: right;
+}
+
+.top-product-text-inside h4 {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: #212121;
+    line-height: 1.5em;
+    font-family: "Ubuntu", sans-serif !important;
+    font-weight: 500;
+}
+
+.top-product-text-inside span {
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: #fa1818;
+}
+
+.newsletter {
+    padding: 3em 0;
+    background: #fa1818;
+    padding-bottom: 6em;
+}
+
+.newsletter-text {
+    float: left;
+    width: 35%;
+    text-align: right;
+}
+
+.newsletter-text h3 {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0.5em 0 0;
+}
+
+.newsletter-box {
+    float: left;
+    width: 50%;
+    margin-left: 2em;
+}
+
+.newsletter-box input[type="email"] {
+    outline: none;
+    padding: 10px;
+    background: none;
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #fff;
+    width: 74%;
+    float: left;
+}
+
+.newsletter-box input[type="submit"] {
+    outline: none;
+    padding: 10px 0;
+    background: #fff;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #fa1818;
+    width: 25.7%;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 4em 0;
+    background: #212121;
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.footer-icon {
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/img-sp.png)
+        no-repeat -14px -193px;
+}
+
+.footer .footer-icon a {
+    color: #999;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif !important;
+    font-size: 14px;
+}
+
+.footer .footer-icon a:hover {
+    color: white;
+}
+
+.footer-content {
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    color: #999;
+    line-height: 1.8em;
+    font-size: 14px;
+}
+
+.footer-content .fa {
+    color: #fa1818;
+    padding-right: 1em;
+}
+
+.footer-content span {
+    color: #84c639;
+}
+
+.footer-content p {
+    margin-left: 2em;
+    display: block;
+}
+
+.footer-content p a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif !important;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-2 {
+    padding: 1em 0 0;
+    display: flex;
+}
+
+.footer-2 h4 {
+    color: #84c639;
+}
+
+.footer-2 h5 {
+    color: #fff;
+}
+
+.footer-2 h4,
+.footer-2 h5 {
+    text-transform: capitalize;
+    font-size: 1em;
+    margin-bottom: 1em;
+    font-family: "Ubuntu", sans-serif !important;
+    margin: 0;
+}
+
+.footer-2 li {
+    display: inline-block;
+}
+
+.footer-2 li a {
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+}
+
+.footer-2 li a i {
+    padding: 0.8em 0 0;
+}
+
+.footer-3 {
+    margin: 4em 0 0;
+    padding: 3em 0 0;
+    text-align: center;
+    border-top: 1px solid #3a3a3a;
+}
+
+.footer-3 p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.8em;
+}
+
+.delete {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 25px !important;
+    opacity: 0.7;
+    cursor: pointer;
+    background: #fa1818 !important;
+    border: 1px solid #fa1818 !important;
+    opacity: 1 !important;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+
+.item-buy {
+    position: relative;
+    width: 100%;
+    height: 5em;
+}
+
+.footer-3 a {
+    color: #fff;
+    text-decoration: none;
+}
+.slide1 {
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/1.jpg);
+}
+.header-cart {
+    position: relative;
+    display: inline-block;
+}
+
+.show {
+    display: block !important;
+}
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 400px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    margin-left: -200px;
+}
+
+.cart-dropdown ul {
+    right: 0;
+    min-width: 130px;
+    text-align: center;
+    padding: 1.5em 0;
+    margin: 0;
+    left: auto;
+    position: absolute;
+}
+
+.header-cart:hover .cart-dropdown ul {
+    display: block;
+}
+
+.imgright{
+    
+    width: 100%;
+}
+
+.imgtop{
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/17.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    min-height: 300px;
+    padding-top: 7em;
+}
+
+.imgtop h3{
+    font-size: 2em;
+    color: #FA1818;
+    text-transform: capitalize;
+    padding: .3em .5em;
+    background: #fff;
+    width: 37%;
+    margin-left: 10em;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif !important;
+    
+}
+
+.imgtop span{
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/img-sp.png) no-repeat 1px -116px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -3%;
+    top: -55%;
+}
+
+.imgbottom{
+    padding: 5em 0 !important;
+    display: flex;
+}
+
+.bottom1{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.bottom1 img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bottom1 h4{
+    font-size: 1.5em;
+    color: #212121;
+    margin: 1em 0;
+    font-family: 'Ubuntu', sans-serif !important;
+    text-align: left;
+    font-weight: 600;
+}
+
+.bottom1 ol{
+    padding-left: 1em;
+    margin-bottom: 44px;
+}
+
+.bottom1 li{
+    color: #999;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: left;
+}
+
+.product-content{
+    padding: 0 0 5em;
+}
+
+.product-content h3{
+    text-align: center;
+    color: #212121;
+    padding-bottom: .5em;
+    position: relative;
+    font-size: 2.5em;
+    margin-bottom: 2em !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.product-content h3::after{
+    content: '';
+    background: #FA1818;
+    height: 2px;
+    width: 8%;
+    position: absolute;
+    bottom: 0%;
+    left: 46%; 
+}
+
+.product-list{
+    margin: 3em 0 0 0em;
+}
+
+.product-list-item{
+    position: relative;
+    margin: 0 !important;
+    background: #FFFFFF;
+    padding: .5em;
+    border: 1px solid #BEBEBE;
+    display: block;
+}
+
+.tag{
+    position: absolute;
+    top: -1%;
+    right: 10%;
+}
+
+.product-list-item1{
+    padding: 1em;
+    border: 1px solid #D7D7D7;
+}
+
+.product-list{
+    display: flex;
+    text-align: right;
+}
+
+.list-item1-top a{
+    display: block;
+    text-align: center;
+
+}
+
+.list-item1-top img{
+    margin: 0 auto;
+}
+
+.list-item1-top h4{
+    font-weight: 600;
+    font-size: 1em;
+    color: #212121;
+    text-align: left;
+}
+.list-item1-top p{
+    color: #212121;
+    margin: 1.5em 0 1em;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: left;
+}
+
+.list-item1-top span{
+    font-weight: 300;
+    text-decoration: line-through;
+    padding-left: 1em;
+}
+
+.product-list h6{
+    text-transform: uppercase;
+    color: #212121;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.single-item{
+    padding: 5em;
+    
+}
+
+.single-item-img{
+    
+}
+
+.single-item h5{
+    font-size: 1.8em;
+    color: #212121;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.single-item-img img{
+    padding: 2em;
+    box-shadow: 0px 0px 5px #e1e1e1;
+}
+
+.rating{
+    padding-left: 2em !important;
+}
+
+.checked{
+    color: greenyellow;
+}
+
+.single-item-title{
+    margin: 2em 0;
+    padding-left: 2em;
+}
+
+.single-item-title h4{
+    font-size: 1em;
+    color: #212121;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.single-item-title p{
+    font-size: 14px;
+    color: #999;
+    line-height: 2em;
+    margin: .5em 0 0;
+    width: 80%;
+}
